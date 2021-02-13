@@ -175,8 +175,8 @@ def main(args):
          [0,0,255], [255,0,0], [200,200,0], [255,0,0], [200,200,0], [0,0,0]]
 
     image1 = cv2.imread(args.source)
-    protoFile = "pose/pose_deploy_linevec.prototxt"
-    weightsFile = "pose/pose_iter_440000.caffemodel"
+    protoFile = "./pose/coco/pose_deploy_linevec.prototxt"
+    weightsFile = "./pose/coco/pose_iter_440000.caffemodel"
     
     frameWidth = image1.shape[1]
     frameHeight = image1.shape[0]
