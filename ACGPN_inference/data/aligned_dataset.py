@@ -157,12 +157,12 @@ class AlignedDataset(BaseDataset):
 
         ### input_C (color)
         # print(self.C_paths)
-        C_path = self.C_paths[test]
+        C_path = self.C_paths[index]
         C = Image.open(C_path).convert('RGB')
         C_tensor = transform_B(C)
 
         ##Edge
-        E_path = self.E_paths[test]
+        E_path = self.E_paths[index]
         # print(E_path)
         E = Image.open(E_path).convert('L')
         E_tensor = transform_A(E)
